@@ -1,0 +1,21 @@
+1. Explain why do we want sometimes to use setImmediate instead of using setTimeout?
+Despite, setImmediately will process a callback to execute at check phase of the event loop after IO events callbacks.
+
+2. Explain the difference between process.nextTick and setImmediate
+setImmediate													process.nextTick
+1. Add callback at check phase of the event loop.				1. nextTick is not part of event loop, adds the callback into nextTick queue.
+2. Run at check phase of event loop.							2. Node processes all the callbacks in queue before event loop.
+
+
+3. Name 10 global modules available in Node environment
+
+1. require
+2. http
+3. events
+4. stream
+5. os
+6. v8
+7. net
+8. fs
+9. domain
+10. proxy
