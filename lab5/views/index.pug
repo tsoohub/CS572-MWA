@@ -1,0 +1,40 @@
+html
+    head
+        title='Hello Pug'
+        style.
+            table, th, td {
+                padding: 10px;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th {
+                background: #f1f1f1;
+            }
+    body
+        h1="List of users"
+
+        table
+            thead
+                tr
+                    th='id'
+                    th='Name'
+                    th='Username'
+                    th='Email'
+                    th='City'
+                    th='Zip code'
+                    th='Latitude'
+                    th='Longitude'
+                    th='Website'
+            tbody
+                for user in users
+                    tr
+                        td=user.id
+                        td=user.name
+                        td=user.username
+                        td=user.email
+                        td=user.address.city
+                        td=user.address.zipcode
+                        td=user.address.geo.lat
+                        td=user.address.geo.lng
+                        td=user.website
+            
