@@ -1,0 +1,10 @@
+﻿NoSQL design model-----------------------------------------------------------------------------
+{
+	_id: objectId(),
+	isbn: 'IS1235',
+	student: '986090',
+	phone: '8565437562',
+	returnDate: '02/27/2018',
+	categories: [ {author: 'Tsoodol', email: ''}, {author: 'Asaad', email: ''}],
+	tags: ['Horror', 'Comedy', 'Action'],
+}
