@@ -1,0 +1,5 @@
+To optimize the Library application performance, I would like to suggest the followings:
+
+1. Create FullText index which is very fast to searching the certain words (Best recommended from me). OR
+2. Create regular index on 'message' key/attribute (Good enough). OR
+3. Create uniqie index on 'message' key/attribute (Not bad).
