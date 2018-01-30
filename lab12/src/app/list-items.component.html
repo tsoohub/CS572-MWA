@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let item of items; let i = index" 
+        appUpper 
+        appMyvisibility show=true 
+        (appMycolor)="changeColorToParent($event)" >{{item}}</li>
+</ul>
+<p>Current selected value: {{color}}</p>
